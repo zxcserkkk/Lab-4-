@@ -8,13 +8,13 @@
 #include <stdlib.h>
 
 int main() {
-    char c = '#';
-    int i = 5;
-    float f = 7.25f;
-    double d = 8.123456789e-10;
+    char c = '!';
+    int i = 2;
+    float f = 3.14f;
+    double d = 5e-12;
 
-    int int_part;
-    double fract_part;
+    int a;
+    double b;
 
     setlocale(LC_ALL, ".UTF-8");
    
@@ -38,10 +38,10 @@ int main() {
         c, i, f, d);
 
     // Расчет 1а
-    int_part = (int)d;
-    fract_part = d - int_part;
+    a = (int)d;
+    b = d - a;
     printf("[Задание 1а] Число double: %e\n", d);
-    printf(" -> Целая часть: %d\n -> Дробная часть: %f\n\n", int_part, fract_part);
+    printf(" -> Целая часть: %d\n -> Дробная часть: %f\n\n", a, b);
 
     // Расчет 1б
     printf("[Задание 1б] Символ '%c':\n", c);
